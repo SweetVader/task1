@@ -25,7 +25,8 @@
 
   <web-item name="myItem" i18n-name-key="my-item.name" key="my-item" section="system.top.navigation.bar" weight="1000">
     <description key="my-item.description">The myItem Plugin</description>
-    <link linkId="my-item-link">MyItem</link>
+    <label key="my-item.label">myItem</label>
+    <link linkId="my-item-link">deleteMe</link>
   </web-item>
 
   <web-item name="Atlassian Developers Site" i18n-name-key="atlassian-developers-site.name" key="atlassian-developers-site" section="my-item-link/my-section" weight="1000">
@@ -34,11 +35,7 @@
     <link linkId="atlassian-developers-site-link">http://developer.atlassian.com/docs</link>
   </web-item>
 
-  <web-panel key="my-web-panel" location="com.atlassian.jira.plugin.headernav.left.context" weight="50">
-    <resource name="view" type="velocity" location="templates/my-panel.vm"/>
-  </web-panel>
-
-  <web-panel name="Rating" key="my-web-panel" location="atl.jira.view.issue.right.context" weight="50">
+  <web-panel name="myWebPanel" i18n-name-key="my-web-panel.name" key="my-web-panel" location="atl.jira.view.issue.right.context" weight="50">
     <resource name="view" type="velocity" location="templates/my-panel.vm"/>
   </web-panel>
 </atlassian-plugin>
